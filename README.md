@@ -2,8 +2,6 @@
 
 Pulitzer is an editorial agent. It decides which newsletters, saved articles, and podcast episodes deserve attention, separates reporting from analysis, and turns the strongest material into sourced audio briefs.
 
-This repository is a public blueprint, not a copy of my agent. Its sources, queue, transcripts, preferences, and examples are fictional. It contains no private subscriptions, email, credentials, listening history, or unpublished writing.
-
 ## The core design
 
 Pulitzer has two different jobs:
@@ -62,9 +60,9 @@ Claim an item while processing, mark it complete only after the brief has been d
 
 - `workspace/AGENTS.md`: operating and sourcing rules.
 - `workspace/SOUL.md`: editorial stance and tone.
-- `workspace/USER.example.md`: fictional selection and audio preferences.
+- `workspace/USER.example.md`: example selection and audio preferences.
 - `workspace/skills/editorial-brief/SKILL.md`: provider-neutral editorial workflow.
-- `examples/editorial-brief.md`: fictional source-to-audio script.
+- `examples/editorial-brief.md`: an example source-to-audio script.
 - `SECURITY.md`: source, subscription, and credential checklist.
 
 ## License
