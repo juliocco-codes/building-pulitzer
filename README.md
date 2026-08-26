@@ -67,4 +67,4 @@ Claim an item while processing, mark it complete only after the brief has been d
 
 ## License
 
-MIT. See `LICENSE`.
+Available for personal and non-commercial use. See `LICENSE` for details.
