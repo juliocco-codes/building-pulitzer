@@ -19,7 +19,8 @@ Do not ask the model to remember whether it processed an episode. Store a durabl
 4. Start with one source and text output.
 5. Add durable deduplication before scheduling the workflow.
 6. Add text-to-speech only after the written brief is accurate and sourced.
-7. Keep delivery credentials and private feeds outside the workspace.
+7. Deliver each brief with one short label followed by native voice notes, rather than downloadable audio attachments.
+8. Keep delivery credentials and private feeds outside the workspace.
 
 OpenClaw loads workspace skills from `<workspace>/skills/<skill>/SKILL.md`. Review the current [skills documentation](https://docs.openclaw.ai/skills) before installing or changing a skill.
 
@@ -48,9 +49,13 @@ The listener should always know whether a statement came from the source, from o
 
 Use a complete transcript when available. Reject suspiciously short, incomplete, or mismatched transcripts rather than filling gaps from the episode title.
 
+For a recurring podcast, let a lightweight intake process poll the public feed, use the episode GUID for deduplication, match the episode to its transcript, and wake the editorial agent only when a new and sufficiently complete transcript is ready. This avoids repeatedly running the model when nothing has changed.
+
 ### Audio is the main experience
 
-Write for listening: short sections, spoken source attribution, clear transitions, and no dependence on visual formatting. Keep a text script for auditability.
+Write for listening: connected paragraphs, spoken source attribution, clear transitions, and no dependence on visual formatting. Let the material determine the length rather than imposing a duration target. Keep a text script for auditability.
+
+Send one compact cover card before each delivery so the listener can identify it in a chat history. Include the workflow, topic or episode title, date, and part count when the audio is split. Then send each part as a native voice note. The label is not a written summary.
 
 ### State changes happen after successful delivery
 

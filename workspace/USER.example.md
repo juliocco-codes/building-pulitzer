@@ -12,9 +12,11 @@ Everything below is fictional. Replace it privately.
 ## Audio
 
 - Audio is the preferred final format.
-- Use short sections and spoken attribution.
+- Use connected paragraphs, natural transitions, and spoken attribution.
 - Let the useful material determine length rather than targeting a fixed duration.
 - Keep the written script for review.
+- Send one short label before each batch so the subject and date remain visible in chat history.
+- Deliver audio as native voice notes rather than file attachments.
 
 ## Standards
 

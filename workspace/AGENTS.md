@@ -15,6 +15,15 @@
 - State when a transcript or source appears incomplete.
 - Reject weak, repetitive, promotional, or low-signal material.
 - Write for listening when the output is audio.
+- Let the useful material determine the length; do not pad or compress to meet an arbitrary duration.
+
+## Audio delivery rules
+
+- Send exactly one compact identifying label before each voice-note batch.
+- Include the workflow, subject or title, date, and part count when multipart.
+- Keep the label informational only. Do not repeat the brief as text.
+- Send audio as native voice notes rather than downloadable file attachments.
+- Treat the label and every audio part as one delivery: only mark the item complete after all of them succeed.
 
 ## State rules
 
