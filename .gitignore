@@ -6,6 +6,8 @@ openclaw.json
 credentials/
 memory/
 queue/
+node_modules/
+data/
 state/
 audio/
 transcripts/
@@ -17,4 +19,4 @@ private-feeds*
 *.pem
 *.token
 *.log
-node_modules/
+USER.md

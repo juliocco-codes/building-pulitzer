@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"><channel>
+  <title>Example podcast</title>
+  <item>
+    <guid>example-episode-1</guid>
+    <title>A useful episode</title>
+    <pubDate>Fri, 28 Aug 2026 06:00:00 GMT</pubDate>
+    <link>https://example.com/podcast/episode-1</link>
+  </item>
+</channel></rss>

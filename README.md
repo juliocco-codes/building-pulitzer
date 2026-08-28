@@ -22,6 +22,15 @@ Do not ask the model to remember whether it processed an episode. Store a durabl
 7. Deliver each brief with one short label followed by native voice notes, rather than downloadable audio attachments.
 8. Keep delivery credentials and private feeds outside the workspace.
 
+The included Node.js tools implement RSS parsing, durable episode deduplication, transcript-quality checks, candidate ranking, and construction of an editorial packet. The model receives the selected source only after deterministic intake has done its job.
+
+```bash
+cp .env.example .env
+npm test
+PODCAST_STATE_FILE=state/podcasts.json node src/cli.mjs scan examples/feed.xml
+PODCAST_STATE_FILE=state/podcasts.json node src/cli.mjs mark EPISODE_GUID
+```
+
 OpenClaw loads workspace skills from `<workspace>/skills/<skill>/SKILL.md`. Review the current [skills documentation](https://docs.openclaw.ai/skills) before installing or changing a skill.
 
 ## A useful editorial brief
@@ -67,6 +76,10 @@ Claim an item while processing, mark it complete only after the brief has been d
 - `workspace/SOUL.md`: editorial stance and tone.
 - `workspace/USER.example.md`: example selection and audio preferences.
 - `workspace/skills/editorial-brief/SKILL.md`: provider-neutral editorial workflow.
+- `src/podcast-intake.mjs`: feed parsing, transcript checks, and durable deduplication.
+- `src/editorial-queue.mjs`: candidate ranking and source-to-model packet construction.
+- `src/cli.mjs`: command-line interface for the podcast state workflow.
+- `test/`: executable tests for the deterministic layer.
 - `examples/editorial-brief.md`: an example source-to-audio script.
 - `SECURITY.md`: source, subscription, and credential checklist.
 
